@@ -32,11 +32,7 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func tryagainButton(_ sender: AnyObject) {
-        
-        randomNumbers()
-        answerlabel.text = String("")
-    }
+   
     
     var total = UInt32()
     
@@ -73,19 +69,27 @@ class ViewController: UIViewController {
     
     
     
-
     @IBAction func button0Action(_ sender: AnyObject) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
+        
+        
         
         if (total == 0){
             
-            answerlabel.text = "Correct"
+            self.present(vc, animated: true, completion: nil)
             
+            //answerlabel.text = "Correct"
         }
-        
+            
         else {
-            answerlabel.text = "Wrong"
+            sumlabel.textColor = UIColor.red
         }
     }
+    
     @IBAction func button1Action(_ sender: AnyObject) {
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -110,101 +114,184 @@ class ViewController: UIViewController {
     
     @IBAction func button2Action(_ sender: AnyObject) {
         
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
+        
+        
         if (total == 2){
             
-            answerlabel.text = "Correct"
+            
+            self.present(vc, animated: true, completion: nil)
+            //answerlabel.text = "Correct"
         }
             
         else {
-            answerlabel.text = "Wrong"
+            
+            sumlabel.textColor = UIColor.red
         }
         
     }
+   
     @IBAction func button3Action(_ sender: AnyObject) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
+        
         
         if (total == 3){
             
-            answerlabel.text = "Correct"
+            
+            self.present(vc, animated: true, completion: nil)
+            //answerlabel.text = "Correct"
         }
             
         else {
-            answerlabel.text = "Wrong"
+            
+            sumlabel.textColor = UIColor.red
         }
+        
     }
+    
+    
     @IBAction func button4Action(_ sender: AnyObject) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
+        
         
         if (total == 4){
             
-            answerlabel.text = "Correct"
+            
+            self.present(vc, animated: true, completion: nil)
+            //answerlabel.text = "Correct"
         }
             
         else {
-            answerlabel.text = "Wrong"
+            
+            sumlabel.textColor = UIColor.red
         }
         
     }
+    
+
     @IBAction func button5Action(_ sender: AnyObject) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
+        
         
         if (total == 5){
             
-            answerlabel.text = "Correct"
+            
+            self.present(vc, animated: true, completion: nil)
+            //answerlabel.text = "Correct"
         }
             
         else {
-            answerlabel.text = "Wrong"
+            
+            sumlabel.textColor = UIColor.red
         }
+        
     }
+    
+    
     @IBAction func button6Action(_ sender: AnyObject) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
+        
         
         if (total == 6){
             
-            answerlabel.text = "Correct"
+            
+            self.present(vc, animated: true, completion: nil)
+            //answerlabel.text = "Correct"
         }
             
         else {
-            answerlabel.text = "Wrong"
+            
+            sumlabel.textColor = UIColor.red
         }
         
     }
+    
+    
+    
     @IBAction func button7Action(_ sender: AnyObject) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
         
         
         if (total == 7){
             
-            answerlabel.text = "Correct"
+            
+            self.present(vc, animated: true, completion: nil)
+            //answerlabel.text = "Correct"
         }
             
         else {
-            answerlabel.text = "Wrong"
+            
+            sumlabel.textColor = UIColor.red
         }
         
-        
     }
+    
+    
     @IBAction func button8Action(_ sender: AnyObject) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
         
         
         if (total == 8){
             
-            answerlabel.text = "Correct"
+            
+            self.present(vc, animated: true, completion: nil)
+            //answerlabel.text = "Correct"
         }
             
         else {
-            answerlabel.text = "Wrong"
             
+            sumlabel.textColor = UIColor.red
         }
+        
     }
+    
+    
     @IBAction func button9Action(_ sender: AnyObject) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
+        
         
         if (total == 9){
             
-            answerlabel.text = "Correct"
+            
+            self.present(vc, animated: true, completion: nil)
+            //answerlabel.text = "Correct"
         }
             
         else {
-            answerlabel.text = "Wrong"
+            
+            sumlabel.textColor = UIColor.red
         }
-        
-        
         
     }
     
