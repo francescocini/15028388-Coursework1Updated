@@ -44,9 +44,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      // Do any additional setup after loading the view, typically from a nib.
         
         randomNumbers()
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,14 +88,23 @@ class ViewController: UIViewController {
     }
     @IBAction func button1Action(_ sender: AnyObject) {
         
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        
+        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
+        
+        
+        
         if (total == 1){
             
-            answerlabel.text = "Correct"
+            self.present(vc, animated: true, completion: nil)
+            
+            //answerlabel.text = "Correct"
         }
         
         else {
-            answerlabel.text = "Wrong"
-        }
+            sumlabel.textColor = UIColor.red
+       }
     }
     
     
