@@ -52,6 +52,7 @@ class ViewController: UIViewController {
     }
 
     
+      
     func randomNumbers(){
         
         let num1 = arc4random() % 5
@@ -63,10 +64,10 @@ class ViewController: UIViewController {
         
         
         
-        //sumlabel.text = String(outputnumber)
+        
+        
         
     }
-    
     
     
     @IBAction func button0Action(_ sender: AnyObject) {

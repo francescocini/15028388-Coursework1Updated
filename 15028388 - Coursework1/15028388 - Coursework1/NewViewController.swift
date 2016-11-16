@@ -9,13 +9,21 @@
 import UIKit
 
 class NewViewController: UIViewController {
+    
+    
+    @IBOutlet var num1ans: UILabel!
+    @IBOutlet var num2ans: UILabel!
+    @IBOutlet var sumans: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         
-     self.navigationController?.setNavigationBarHidden(true, animated: true)        
+        
+        
+     self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,17 +32,7 @@ class NewViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-   
+     
     @IBAction func playagain(_ sender: AnyObject) {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         

@@ -14,6 +14,7 @@
 		84ACE2CA1DB253200033850C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ACE2C81DB253200033850C /* LaunchScreen.storyboard */; };
 		84ACE2D51DB253200033850C /* _5028388___Coursework1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACE2D41DB253200033850C /* _5028388___Coursework1Tests.swift */; };
 		84ACE2E01DB253200033850C /* _5028388___Coursework1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACE2DF1DB253200033850C /* _5028388___Coursework1UITests.swift */; };
+		84C8514B1DDCCAD700803F7B /* Draggable_Apples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8514A1DDCCAD700803F7B /* Draggable_Apples.swift */; };
 		84ED43A11DB7EDC9006AA6A4 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED43A01DB7EDC9006AA6A4 /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		84ACE2DB1DB253200033850C /* 15028388 - Coursework1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "15028388 - Coursework1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ACE2DF1DB253200033850C /* _5028388___Coursework1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_5028388___Coursework1UITests.swift"; sourceTree = "<group>"; };
 		84ACE2E11DB253200033850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C8514A1DDCCAD700803F7B /* Draggable_Apples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draggable_Apples.swift; sourceTree = "<group>"; };
 		84ED43A01DB7EDC9006AA6A4 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				84ACE2C11DB253200033850C /* ViewController.swift */,
 				84ED43A01DB7EDC9006AA6A4 /* NewViewController.swift */,
 				84ACE2C31DB253200033850C /* Main.storyboard */,
+				84C8514A1DDCCAD700803F7B /* Draggable_Apples.swift */,
 				84ACE2C61DB253200033850C /* Assets.xcassets */,
 				84ACE2C81DB253200033850C /* LaunchScreen.storyboard */,
 				84ACE2CB1DB253200033850C /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				84ED43A11DB7EDC9006AA6A4 /* NewViewController.swift in Sources */,
 				84ACE2C21DB253200033850C /* ViewController.swift in Sources */,
+				84C8514B1DDCCAD700803F7B /* Draggable_Apples.swift in Sources */,
 				84ACE2C01DB253200033850C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
