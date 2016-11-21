@@ -8,7 +8,11 @@
 
 import UIKit
 
+
+
 class NewViewController: UIViewController {
+    
+   
     
     
     @IBOutlet var num1ans: UILabel!
@@ -20,6 +24,19 @@ class NewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+     
+        num1ans.text = UserDefaults.standard.string(forKey: "string1")
+        num2ans.text = UserDefaults.standard.string(forKey: "string2")
+        sumans.text = UserDefaults.standard.string(forKey: "sum3")
+        
+        num1ans.textColor = UIColor.red
+        num2ans.textColor = UIColor.red
+        sumans.textColor = UIColor.red
+        
+       
+        num1ans.font = num1ans.font.withSize(34)
+        num2ans.font = num2ans.font.withSize(34)
+        sumans.font = sumans.font.withSize(34)
         
         
         

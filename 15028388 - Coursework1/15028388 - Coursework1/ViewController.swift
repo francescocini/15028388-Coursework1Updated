@@ -12,6 +12,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let defaults = UserDefaults.standard
+    
     
     
     @IBOutlet var num1label: UILabel!
@@ -37,6 +39,7 @@ class ViewController: UIViewController {
     var total = UInt32()
     
     
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,10 +62,18 @@ class ViewController: UIViewController {
         let num2 = arc4random() % 5
         total = num1 + num2
         
+        //totallbl.text = String(total)
+        
+       
+        let str = String(total)
+        
         num1label.text = String(num1)
         num2label.text = String(num2)
         
         
+        defaults.set(num1label.text, forKey: "string1")
+        defaults.set(num2label.text, forKey: "string2")
+        defaults.set(str, forKey: "sum3")
         
         
         
@@ -72,14 +83,17 @@ class ViewController: UIViewController {
     
     @IBAction func button0Action(_ sender: AnyObject) {
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+       let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
+       let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
         
-        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
         
         
         
         if (total == 0){
+            
+            
+            
             
             self.present(vc, animated: true, completion: nil)
             
@@ -96,11 +110,13 @@ class ViewController: UIViewController {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         
-        let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
-        
+       let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
         
         
         if (total == 1){
+            
+            
+            
             
             self.present(vc, animated: true, completion: nil)
             
@@ -121,8 +137,12 @@ class ViewController: UIViewController {
         let vc: UINavigationController = storyboard.instantiateViewController(withIdentifier: "newViewController") as! UINavigationController
         
         
+        
+        
         if (total == 2){
             
+            
+           
             
             self.present(vc, animated: true, completion: nil)
             //answerlabel.text = "Correct"
